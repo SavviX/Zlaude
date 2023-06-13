@@ -1,4 +1,4 @@
-//Tags and text to be filtered goes here. 
+//Tags and text to be filtered go here. 
 import config from './config.js';
 
 export function filterText(text) {
