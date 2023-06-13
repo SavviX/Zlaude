@@ -1,4 +1,4 @@
-const config = {
+export const config = {
     TOKEN: "xoxc-xxxx",
     COOKIE: "xoxd-xxxx",
     TEAM_ID: "workspacename",
