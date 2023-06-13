@@ -137,4 +137,4 @@ Something is weird with how events and timeouts race.
 Added a function to remove XML tags, A:, H:, Assistant:, and 'Human:' from responses.
 
 # Final note
-Thanks PandarusAnon for making this. Credits to borf for the Ping message, Kevin_4850 for the making XML the new meta and aRfy for the API key
+Thanks PandarusAnon for making this. Credits to borf for the Ping message, Kevin_4850 for making XML the new meta and aRfy for the API key
