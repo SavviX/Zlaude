@@ -4,9 +4,9 @@ const config = {
     TEAM_ID: "workspacename",
     CHANNEL: "C1234D4567S",
     CLAUDE_USER: "U1234A568BC",
-// Removing the Text between <prune></prune> and <summary></summary> tags. Also removes other XML tags which are likely to leak into chat along with "A:","H:","Assistant:" and Human:". Set it to true of you use the ping message provided with the rentry. 
 
-     TagRemoval: true,// Set to 'true' to enable pruning, 'false' to disable
+    // Removing the Text between <prune></prune> and <summary></summary> tags. Also removes other XML tags which are likely to leak into chat along with "A:","H:","Assistant:" and Human:". Set it to true of you use the ping message provided with the rentry. 
+    TagRemoval: true,// Set to 'true' to enable pruning, 'false' to disable
 
     edit_msg_with_ping: true,
 
