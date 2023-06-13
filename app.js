@@ -166,7 +166,7 @@ app.post('/(.*)/chat/completions', async (req, res, next) => {
 });
 
 app.listen(config.PORT, () => {
-    console_log(`Slaude is running at http://localhost:${config.PORT}`);
+    console_log(`Zlaude is running at http://localhost:${config.PORT}`);
     checkConfig();
 });
 
