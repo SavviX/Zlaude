@@ -1,4 +1,4 @@
-#(This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak.)
+#### (This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak.)
 
 ### Slaude is a small server serving as an interface between SillyTavern and Claude on Slack
 This aims to serve as an alternative, but not a replacement, for Spermack. If Spermack works fine for you or you like its features there is no reason to use this beyond curiosity.
@@ -137,4 +137,4 @@ Something is weird with how events and timeouts race.
 Added a function to remove XML tags, A:, H:, Assistant:, and 'Human:' from responses.
 
 # Final note
-Thanks PandarusAnon for making this. Credits to borf for the Ping message, Kevin for the making XML the new meta and aRfy for the API key
+Thanks PandarusAnon for making this. Credits to borf for the Ping message, Kevin_4850 for the making XML the new meta and aRfy for the API key
