@@ -9,9 +9,11 @@ export function filterText(text) {
     const chatRe = /&lt;\/?CHAT&gt;/g;
     const modRe = /&lt;\/?mod&gt;/g;
     const threadRe = /&lt;\/?thread&gt;/g;
+    const humanRe = /&lt;\/?human&gt;/g;
+    const respondRe = /\[You respond here\]/g;
 
     
-    return text.replace(pruneRe, '').replace(summaryRe, '').replace(chatRe, '').replace(modRe, '').replace(threadRe, '')
+    return text.replace(pruneRe, '').replace(summaryRe, '').replace(chatRe, '').replace(modRe, '').replace(threadRe, '').replace(humanRe, '').replace(respondRe, '')
         .replace(/Assistant:/g, '')
         .replace(/Human:/g, '')
         .replace(/A:/g, '')
