@@ -1,3 +1,5 @@
+#(This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak.)
+
 ### Slaude is a small server serving as an interface between SillyTavern and Claude on Slack
 This aims to serve as an alternative, but not a replacement, for Spermack. If Spermack works fine for you or you like its features there is no reason to use this beyond curiosity.
 
@@ -70,7 +72,7 @@ Note that you do not need to have Slack open in your browser for this to work. O
 ## Untested guide for running Slaude on Android with termux
 Not tested if this works myself, but this guide was provided by a nice anon. This guide assumes you've already set up SillyTavern with termux.
 
-Copy your config.js file from your desktop to your phone if you already have it set up there. Make sure you're using the same fork. If you don't have it setup then: Download the https://github.com/PandarusAnon/slaude zip off of GitHub using your phone's browser. (Use desktop mode code download zip).
+Copy your config.js file from your desktop to your phone if you already have it set up there. Make sure you're using the same fork. If you don't have it setup then: Download the [https://github.com/Flamanon/Zlaude](https://github.com/Flamanon/Zlaude/archive/refs/heads/main.zip) zip off of GitHub using your phone's browser. (Use desktop mode code download zip).
 Unzip the contents, open config.js file in a text editor. Edit the contents of the file following the instructions on the git page and save.
 Use kiwi browser for access to developer tools. It's a hassle on mobile, just use desktop this one time copying the cookies and shit.
 If you don't have a text editor (wow) use Acode or FX explorer.
@@ -81,7 +83,7 @@ If you don't want to install an extra app, you can learn to use a terminal text 
 
 Now open termux and run the following:    
 `termux-setup-storage` click allow storage access.  
-`git clone https://github.com/PandarusAnon/slaude slaude` use the git link for whatever fork you want to use.  
+`git clone https://github.com/Flamanon/Zlaude Zlaude` use the git link for whatever fork you want to use.  
 `cd slaude`  
 `npm install`  
 `termux-storage-get config.js` Browse to the directory where you have your edited config.js file, and select the file to import it.  
@@ -129,5 +131,10 @@ The ping is edited in to the top of your prompt, before it. So it could technica
 Now never ignores responses, from possibly previous threads, from the same request.
 Something is weird with how events and timeouts race.
 
+
+## 2023-06-15
+
+Added a function to remove XML tags, A:, H:, Assistant:, and 'Human:' from responses.
+
 # Final note
-Thanks PandarusAnon for making this.
+Thanks PandarusAnon for making this. Credits to borf for the Ping message, Kevin for the making XML the new meta and aRfy for the API key
