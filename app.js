@@ -5,18 +5,6 @@ import WebSocket from 'ws';
 import config from './config.js';
 import splitMessageInTwo from './utils.js';
 import { filterText } from './filterText.js';
-/**
- * Remove text between <prune> and </prune> tags along with the tags themselves
- * @param {string} text The input text containing the prune tags
- * @return {string} The text with the content between prune tags removed
- */
-function removePruneTags(text) {
-  if (config.removePruneTags) {
-    const regex = /<prune>[\s\S]*?<\/prune>/g;
-    return text.replace(regex, '');
-  }
-  return text;
-}
 
 
 const app = express();
