@@ -4,6 +4,9 @@ const config = {
     TEAM_ID: "workspacename",
     CHANNEL: "C1234D4567S",
     CLAUDE_USER: "U1234A568BC",
+// Removing the Text between <prune></prune> and <summary></summary> tags. Also removes other XML tags which are likely to leak into chat along with "A:","H:","Assistant:" and Human:". Set it to true of you use the ping message provided with the rentry. 
+
+     TagRemoval: true,// Set to 'true' to enable pruning, 'false' to disable
 
     edit_msg_with_ping: true,
 
@@ -14,7 +17,12 @@ const config = {
     // Can be whatever you want it to be but keep in mind that it might result in unpredictable responses.
     // Anything we put here will eat into our max available tokens so keep it brief. Anything above ~12000 characters will get cut off by Slack.
     PING_MESSAGE_PREFIX: ".\n\n�A",
-    PING_MESSAGE: "r�",
+    PING_MESSAGE: "r [Anchors:\r\n"+
+     "- {Roleplay Guide}\r\n"+
+     "- [Assistant Note]\r\n"+
+     "- <CHR>, Your Character\r\n"+
+     "- <prompt(s)#> Priorities]\r\n"+
+"[Follow <mod>, respect <human>'s control. Continue the RP. Make sure to use new words, dialogues, scenes and actions to form each new response making it creative and immersive. Also, First, identify any repetitive phrases, dialogues, character actions, and ideas in the responses starting with 'A:' in <CHAT>. If you find any, create a single list of them between <prune></prune> tags. If you find none, put simply 'N/A'. This <prune> list will serve as a list of items for you to remove from future replies to end repetition. Whether or not you find any, write one in-character response as outlined above, producing novel and soulful prose and avoiding items from the <prune> list . Write a short summary of the story so far enclosed in <summary></summary> tags, for your reference.[Human note: Make sure to use new words, dialogues, scenes and actions to form each new response. You have a bad habit of repeating yourself in responses and failing to generate original and new words/phrases/dialogues for each response, so there is room for improvement. Incase of interaction between 2 characters, your responses are repetitive and cause stagnation. Take care to fix these bad habits. Quality check your own responses.]]",
 
     // if edit_msg_with_ping is true:
     PING_PREFIX: "�A",
