@@ -104,11 +104,11 @@ export const config = {
     delay_before_edit: 400,
 
     // timeout if reply is taking too long to start being received
-    reply_timeout_delay: 50 * 1000,
+    reply_timeout_delay: 100 * 1000,
     // timeout if waiting just for the last multi reply
-    reply_multi_timeout_delay: 25 * 1000,
+    reply_multi_timeout_delay: 100 * 1000,
     // timeout if reply is message is taking too long to update more
-    reply_update_timeout_delay: 100 * 1000,
+    reply_update_timeout_delay: 200 * 1000,
 
     PORT: 5004,
 }
