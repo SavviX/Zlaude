@@ -12,9 +12,10 @@ export function filterText(text) {
     const threadRe = /&lt;\/?thread&gt;/g;
     const humanRe = /&lt;\/?human&gt;/g;
     const respondRe = /\[You respond here\]/g;
+    const chrRe = /&lt;\/?CHR&gt;/g;
 
     
-    return text.replace(pruneRe, '').replace(summaryRe, '').replace(chatRe, '').replace(modRe, '').replace(threadRe, '').replace(humanRe, '').replace(respondRe, '')
+    return text.replace(pruneRe, '').replace(summaryRe, '').replace(chatRe, '').replace(modRe, '').replace(threadRe, '').replace(humanRe, '').replace(respondRe, '').replace(chrRe, '')
         .replace(/Assistant:/g, '')
         .replace(/Human:/g, '')
         .replace(/A:/g, '')
