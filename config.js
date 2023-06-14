@@ -8,7 +8,7 @@ export const config = {
     // Removing the Text between <prune></prune> and <summary></summary> tags. Also removes other XML tags which are likely to leak into chat along with "A:","H:","Assistant:" and Human:". Set it to true of you use the ping message provided with the rentry. 
     TagRemoval: true,// Set to 'true' to enable pruning, 'false' to disable
 
-    edit_msg_with_ping: true,
+    edit_msg_with_ping: false,
 
     // if edit_msg_with_ping is false:
     // (i.e.send new message with ping instead of editting the first one)
