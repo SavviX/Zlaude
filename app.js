@@ -372,7 +372,6 @@ function streamNextClaudeResponseChunk(message, res, thread) {
                 thread.ClaudeTsSet.add(data.message.ts)
 
                 let text = data.message.text;
-                text = filterText(text);
                 let stillTyping = text.endsWith(typingString);
                 text = stillTyping ? stripTyping(text) : text;
                 const textUncropped = text
