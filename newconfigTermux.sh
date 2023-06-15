@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+pkg install nodejs
 npm install
 
 
