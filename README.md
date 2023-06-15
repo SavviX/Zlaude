@@ -7,6 +7,7 @@
 </picture
 
 
+
 #### (This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak.)
 
 ### Slaude is a small server serving as an interface between SillyTavern and Claude on Slack
