@@ -121,13 +121,13 @@ Type the line: `shortcut.create-session=ctrl + t` anywhere in the file, just mak
 Now to run a new session, simply press ctrl+t.
 
 # FAQ
-### Me not know how do XML. What do?
+- ### Me not know how do XML. What do?
 Stick to bfs15/slaude, sir.
-### What XML prompt structure should I use with this?
+- ### What XML prompt structure should I use with this?
 The reason I have made this fork is so you can experiment with tags and make your own structure and prompts. You can refer to the official [Anthropic document](https://docs.anthropic.com/claude/docs/getting-started-with-claude) for this. The document contains all the information you will need to use Claude for productive tasks. In case you wish to be spoonfed, [this](https://rentry.org/qmvwmh) is for use with [SillyTavern](https://github.com/SillyTavern/SillyTavern), if you will be using ST as a front-end. 
-### I set up everything correctly, but my front end does not receive a response, even though it seems to have been generated on Slack. What am I doing wrong?
+- ### I set up everything correctly, but my front end does not receive a response, even though it seems to have been generated on Slack. What am I doing wrong?
 No idea, maybe check your console and try to figure it out yourself. Chances are, you have streaming enabled, disable it. If nothing works, do a good ol' reinstall.
-### This does not deal with repetition as effectively as I thought it would, you liar!!
+- ### This does not deal with repetition as effectively as I thought it would, you liar!!
 This is for people who are fine with experimentation with XML, which in itself is quite a difficult thing to understand for the majority of the people out there. There is no magic prompt, keep experimenting. The concept is to make Claude *think* and do background tasks to enhance its performance. 
 
 
