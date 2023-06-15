@@ -142,10 +142,14 @@ Now never ignores responses, from possibly previous threads, from the same reque
 Something is weird with how events and timeouts race.
 
 
-## 2023-06-15
+## 2023-06-13
 
 Added a function to remove XML tags, A:, H:, Assistant:, and 'Human:' from responses.
 Increased the default config timeout for those having "Response taking too long problem". This Ping will make Claude "Think" a bit, so expect it to take a bit of time to finish the response. 
+
+## 2023-06-15
+
+Added a low-effort interface to edit the filterText.js. This should make it more convenient to modify the filter. 
 
 # Final note
 Thanks PandarusAnon for making this. Credits to borf for the Ping message, Kevin_4850 for making XML the new meta and aRfy for the API key
