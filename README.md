@@ -1,8 +1,9 @@
-![picture](https://i.imgur.com/sD4jUYW.png)
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/M6zoO1u.png">
   <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/sD4jUYW.png">
+  <img alt="Shows a black font text in light mode and a white font text in dark mode." src="https://i.imgur.com/sD4jUYW.png">
 </picture
 
 
