@@ -120,7 +120,7 @@ Do: `nano ~/.termux/termux.properties`
 Type the line: `shortcut.create-session=ctrl + t` anywhere in the file, just make sure you're writing on a fresh line and press ctrl+o, enter, ctrl+x.  
 Now to run a new session, simply press ctrl+t.
 
-#FAQ
+# FAQ
 ### Me not know how do XML. What do?
 Stick to bfs15/slaude, sir.
 ### What XML prompt structure should I use with this?
