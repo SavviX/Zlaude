@@ -1,5 +1,7 @@
 #!/bin/bash
 
+npm install
+
 node server.cjs &
 server_pid=$!
 
