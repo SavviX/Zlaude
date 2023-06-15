@@ -65,7 +65,7 @@ This only needs to be changed if you have anything else running on the same port
 ### Filter Configuration
 Run the `configuration filter.bat` file or the `newconfig.bat` file (recommended). The latter will automatically open the interface in your browser while the former requires you to enter the `http://localhost:3000` manually. Once the interface is up and running, you can perform the following actions:
 - Add XML tags to the filter.
-  - In the typebar below the `XML tags` header, type the **_text_** of your tag. Eg: If the tags you intend to remove are <text></text> 
+  - In the typebar below the `XML tags` header, type the **_text_** of your tag. Eg: If the tags you intend to remove are `<text></text>` 
     then type `text` in the bar.
   - Select the appropriate checkbox, The first checkbox will remove the tags and the text between them, while the Second checkbox will only remove the tags.
   - Press save (important).
