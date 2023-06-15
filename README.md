@@ -8,7 +8,7 @@
 
 
 
-#### (This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak.)
+#### (This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak. **_Do not use this if you want text streaming_**.)
 
 ### Zlaude is a small server serving as an interface between SillyTavern and Claude on Slack
 This aims to serve as an alternative, but not a replacement, for Spermack. If Spermack works fine for you or you like its features there is no reason to use this beyond curiosity.
@@ -62,6 +62,19 @@ One thing that I personally tried was `"Continue the story as Assistant. Keep yo
 ### PORT
 This only needs to be changed if you have anything else running on the same port already.
 
+### Filter Configuration
+Run the `configuration filter.bat` file or the `newconfig.bat` file (recommended). The latter will automatically open the interface in your browser while the former requires you to enter the `http://localhost:3000` manually. Once the interface is up and running, you can perform the following actions:
+- Add XML tags to the filter.
+  - In the typebar below the `XML tags` header, type the **_text_** of your tag. Eg: If the tags you intend to remove are <text></text> 
+    then type `text` in the bar.
+  - Select the appropriate checkbox, The first checkbox will remove the tags and the text between them, while the Second checkbox will only remove the tags.
+  - Press save (important).
+- Add brackets to your filter.
+  - Write the text of your bracket in this type bar. If you intend to remove (Text: ) along with whatever is between the ':' and ')' then type `Text` in the bar and hit save. A possible use case for this is to trim OOC responses. (**Pro-tip** - *This is only for use by people who know what they are doing.*. Claude sometimes generates ( Text: ) instead of (Text: ). So type `<space>Text` into the type bar and hit save. Go to filterText.js and change the name for Regular Expression for this to `spaceTextRe` so that its different from the entry without <space>. Better this way.)
+- Individual.
+  - This is to filter out individual words from the responses. Would not recommend using this honestly, but you do you man.
+  - If the words you need to filter look something like this: `text:` ie. contains symbols, then go to filterText.js and below the `// Replace text goes here` comment add `.replace(/text:/g, '')`. (~~**Pro-Tip**~~ **Note** - I recommend turning on console logs for Zlaude by opening the `app.js` file and in the `getClaudeResponse` function, navigate to `Let text = data.message.text` and below that type `console.log(text);`. Now look at the console to see what response you are receiving and how the symbols you want to be filtered are received by Zlaude. Alternatively, you can also look at the console of [SillyTavern](https://github.com/SillyTavern/SillyTavern).)
+
 ## Starting the server and connecting to SillyTavern
 It is recommended but not required to use the latest dev version of SillyTavern.
 
@@ -106,6 +119,19 @@ To run Zlaude + Tavern next time, open termux like usual. In the first session d
 Do: `nano ~/.termux/termux.properties`  
 Type the line: `shortcut.create-session=ctrl + t` anywhere in the file, just make sure you're writing on a fresh line and press ctrl+o, enter, ctrl+x.  
 Now to run a new session, simply press ctrl+t.
+
+#FAQ
+### Me not know how do XML. What do?
+Stick to bfs15/slaude, sir.
+### What XML prompt structure should I use with this?
+The reason I have made this fork is so you can experiment with tags and make your own structure and prompts. You can refer to the official [Anthropic document](https://docs.anthropic.com/claude/docs/getting-started-with-claude) for this. The document contains all the information you will need to use Claude for productive tasks. In case you wish to be spoonfed, [this](https://rentry.org/qmvwmh) is for use with [SillyTavern](https://github.com/SillyTavern/SillyTavern), if you will be using ST as a front-end. 
+### I set up everything correctly, but my front end does not receive a response, even though it seems to have been generated on Slack. What am I doing wrong?
+No idea, maybe check your console and try to figure it out yourself. Chances are, you have streaming enabled, disable it. If nothing works, do a good ol' reinstall.
+### This does not deal with repetition as effectively as I thought it would, you liar!!
+This is for people who are fine with experimentation with XML, which in itself is quite a difficult thing to understand for the majority of the people out there. There is no magic prompt, keep experimenting. The concept is to make Claude *think* and do background tasks to enhance its performance. 
+
+
+
 
 # Changelog
 
