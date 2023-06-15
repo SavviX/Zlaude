@@ -74,6 +74,7 @@ Run the `configuration filter.bat` file or the `newconfig.bat` file (recommended
 - Individual.
   - This is to filter out individual words from the responses. Would not recommend using this honestly, but you do you man.
   - If the words you need to filter look something like this: `text:` ie. contain symbols, then go to filterText.js and below the `// Replace text goes here` comment add `.replace(/text:/g, '')`. (~~**Pro-Tip**~~ **Note** - I recommend turning on console logs for Zlaude by opening the `app.js` file and in the `getClaudeResponse` function, navigate to `Let text = data.message.text` and below that type `console.log(text);`. Now look at the console to see what response you are receiving and how the symbols you want to be filtered are received by Zlaude. Alternatively, you can also look at the console of [SillyTavern](https://github.com/SillyTavern/SillyTavern).)
+- **Close the interface when you are done. _(Remember to save everything)_**
 
 ## Starting the server and connecting to SillyTavern
 It is recommended but not required to use the latest dev version of SillyTavern.
