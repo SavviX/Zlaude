@@ -1,5 +1,4 @@
-# Install Node.js modules
-npm install
 
-# Start the server
+call npm install
+
 node server.cjs
