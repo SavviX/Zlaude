@@ -8,7 +8,7 @@
 
 
 
-#### (This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak. **_Do not use this if you want text streaming_**.)
+#### (This fork has been created for XML users. Disable `TagRemoval` in `config.js` by setting value to `false` if you want to use a regular jailbreak. **_Do not use this fork if you want text streaming_**.)
 
 ### Zlaude is a small server serving as an interface between SillyTavern and Claude on Slack
 This aims to serve as an alternative, but not a replacement, for Spermack. If Spermack works fine for you or you like its features there is no reason to use this beyond curiosity.
