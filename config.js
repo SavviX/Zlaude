@@ -1,9 +1,9 @@
 export const config = {
-    TOKEN: "xoxc-xxxx",
-    COOKIE: "xoxd-xxxx",
-    TEAM_ID: "workspacename",
-    CHANNEL: "C1234D4567S",
-    CLAUDE_USER: "U1234A568BC",
+    TOKEN: "xoxc-5465733981186-5462799182549-5468169276052-5af4981901ad0a408eaff5d90a3f05a4e7b4e3b1eb3267378114a8b562f33860",
+    COOKIE: "xoxd-kz8poiWwQ59iDAg8F6poGfjfU%2F0oI9Cdk%2FvSbRCdij6xeJAx3AfY%2BVhgCenyKpNawspWTLtHasBPwcucsQOs59fvHYM9kONywscqGSO4D4Yvzw39i00AC%2BrBssjNc5syZ1fWjNk1Tx0mwOdHnFCWqq7XbZRtvjHfLWbTDCXs8%2FxRW3UmVjkDR%2BC4Bg%3D%3D",
+    TEAM_ID: "wineparty",
+    CHANNEL: "C05DPML100J",
+    CLAUDE_USER: "U05EDDC2MQ8",
 
     // Removing the Text between <prune></prune> and <summary></summary> tags. Also removes other XML tags which are likely to leak into chat along with "A:","H:","Assistant:" and Human:". Set it to true of you use the ping message provided with the rentry. 
     TagRemoval: true,// Set to 'true' to enable pruning, 'false' to disable
